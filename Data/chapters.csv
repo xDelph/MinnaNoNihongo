@@ -1,0 +1,120 @@
+chapter;kana;kanji;furigana;romaji;traduction;sampleKanji;sampleKana;sampleTraduction;type;subGroup;group;jlpt;tags
+1;〜さん;〜さん;〜 さん;〜san;Mme. M. (titre de respect ajouté à un nom);;;;(Affixe) 接辞[せつじ];(Suffixe) 接尾辞[せつびじ];Other;5;Affixes Chapitre_01 N5
+1;〜ちゃん;〜ちゃん;〜 ちゃん;〜chan;"(suffixe souvent ajouté au nom d&#x27;un enfant)";;;;(Affixe) 接辞[せつじ];(Suffixe) 接尾辞[せつびじ];Other;5;Affixes Chapitre_01 N5
+1;〜くん;〜君;〜 君[くん];〜kun;"(suffixe souvent ajouté au nom d&#x27;un petit garçon)";;;;(Affixe) 接辞[せつじ];(Suffixe) 接尾辞[せつびじ];Other;5;Affixes Chapitre_01 N5
+1;～からきました;～から来ました;〜 から 来[き]ました;～karakimashita;Je viens (Je suis venu) de ～.;;;;(Affixe) 接辞[せつじ];(Suffixe) 接尾辞[せつびじ];Other;5;Affixes Chapitre_01 N5
+1;～じん;～人;〜 人[じん];～jin;"(suffixe qui signifie &quot;de nationalité&quot;)";;;;(Affixe) 接辞[せつじ];(Suffixe) 接尾辞[せつびじ];Other;4;Affixes Chapitre_01 N4
+1;～さい;～歳;〜 歳[さい];～sai;"～ans (pour l&#x27;âge)";;;;(Affixe) 接辞[せつじ];(Suffixe) 接尾辞[せつびじ];Other;1;Affixes Chapitre_01 N1
+1;～しゃいん;～社員;〜 社員[しゃいん];～shain;employer de ～compagnie (à utiliser avec le nom de la compagnie);;;;(Affixe) 接辞[せつじ];(Préfixe) 接頭辞[せっとうじ];Other;2;Affixes Chapitre_01 N2
+1;あのひと;あの人;あの 人[ひと];anohito;cette personne, lui, elle;;;;(Nom) 普通名詞[ふつうめいし];Personne;Commun;X;Chapitre_01 Noms NX
+1;あのかた;あの方;あの 方[かた];anokata;cette personne, lui, elle (plus polie);あの 方[かた]たちに 大変[たいへん]うれしいです;あの かたたちに たいへんうれしいです;Je suis très heureux de les rencontrer.;(Nom) 普通名詞[ふつうめいし];Personne;Commun;X;Chapitre_01 Noms NX
+1;イギリス;イギリス;イギリス;igirisu;Royaume-Uni;;;;(Nom) 普通名詞[ふつうめいし];Pays, ville, langues;Commun;X;Chapitre_01 Noms NX
+1;おなまえは;お名前は;お 名前[なまえ]は;onamaewa;Comment vous appelez vous ? Quel est votre nom ?;;;;(Expression) 表現[ひょうげん];;Expression;5;Chapitre_01 Expressions N5
+1;おいくつ;お幾つ;お 幾[いく]つ;oikutsu;quel âge (polie);あなたの お 父[おとう]さんはおいくつですか;あなたの お おとうさんはおいくつですか;Quel âge a ton père?;(adv) 副詞[ふくし];Adverbes interrogatifs et exclamatifs;Other;X;Chapitre_01 Mots_Invariables NX
+1;こちらは～さんです;こちらは～さんです;こちらは〜さんです;kochirawa～sandesu;"C&#x27;est Monsieur, Madame ～";;;;(Expression) 表現[ひょうげん];;Expression;5;Chapitre_01 Expressions N5
+1;どうぞよろしくおねがいします;どうぞ宜しくお願いします;どうぞ 宜[よろ]しくお 願[ねが]いします;dōzoyoroshikuonegaishimasu;Très heureux de faire votre connaissance.;;;;(Expression) 表現[ひょうげん];;Expression;5;Chapitre_01 Expressions N5
+1;はい;はい;はい;hai;oui;;;;(Expression) 表現[ひょうげん];;Expression;5;Chapitre_01 Expressions N5
+1;ちゅうごく;中国;中国[ちゅうごく];chūgoku;Chine;"パンダは &lt;b&gt;中国[ちゅうごく]&lt;/b&gt;から 来[き]ています";パンダは ちゅうごくから きています;Les pandas viennent de Chine.;(Nom) 普通名詞[ふつうめいし];Pays, ville, langues;Commun;X;Chapitre_01 Noms NX
+1;かいしゃいん;会社員;会社[かいしゃ] 員[いん];kaishain;"employer d&#x27;une compagnie";私[わたし]の 父[ちち]は 会社員[かいしゃいん]です;わたしの ちちは かいしゃいんです;Mon père est employé de bureau.;(Nom) 普通名詞[ふつうめいし];Type de postes;Other;X;Chapitre_01 Noms NX
+1;どなた;何方;何方[どなた];donata;qui ? (poli);失礼[しつれい]ですが、どなたですか;しつれいですが、どなたですか;Excusez-moi, mais qui êtes-vous?;(Nom) 普通名詞[ふつうめいし];Idées Abstraites;Commun;5;Chapitre_01 N5 Noms
+1;なんさい;何歳;何[なん] 歳[さい];nansai;quel âge ?;;;;歳;;Other;5;Chapitre_01 Classificateurs N5
+1;せんせい;先生;先生[せんせい];sensei;professeur, enseignant;"私[わたし]は 日本語[にほんご]の &lt;b&gt;先生[せんせい]&lt;/b&gt;になりたいです";わたしは にほんごの せんせいになりたいです;Je veux devenir un professeur de japonais.;(Nom) 普通名詞[ふつうめいし];Type de postes;Commun;5;Chapitre_01 N5 Noms
+1;はじめまして;初めまして;初[はじ]めまして;hajimemashite;Enchanté (de vous connaître). (utilisé en début de présentation de soi);;;;(Expression) 表現[ひょうげん];;Expression;5;Chapitre_01 Expressions N5
+1;いしゃ;医者;医者[いしゃ];isha;docteur, médecin;"私[わたし]は &lt;b&gt;医者[いしゃ]&lt;/b&gt;に 相談[そうだん]した";わたしは いしゃに そうだんした;"J&#x27;ai consulté le médecin.";(Nom) 普通名詞[ふつうめいし];Type de postes;Commun;5;Chapitre_01 N5 Noms
+1;いいえ, いえ;否;否[いえ];īe, ie;non;いいえ、 必要[ひつよう]がありません;いいえ、 ひつようがありません;"Non, je n&#x27;en ai pas besoin.";(Nom) 普通名詞[ふつうめいし];Idées Abstraites;Commun;5;Chapitre_01 N5 Noms
+1;だいがく;大学;大学[だいがく];daigaku;université;"&lt;b&gt;大学[だいがく]&lt;/b&gt;に 行[い]ってもっと 勉強[べんきょう]したいです";だいがくに いってもっと べんきょうしたいです;"Je veux aller à l&#x27;université et étudier plus.";(Nom) 普通名詞[ふつうめいし];Bâtiments, pièces, lieu;Commun;5;Chapitre_01 N5 Noms
+1;しつれいですが;失礼ですが;失礼[しつれい]ですが;shitsureidesuga;Excusez-moi. (pour demander une info perso);;;;(Expression) 表現[ひょうげん];;Expression;5;Chapitre_01 Expressions N5
+1;がくせい;学生;学生[がくせい];gakusei;étudiant;"彼[かれ]は 真面目[まじめ]な &lt;b&gt;学生[がくせい]&lt;/b&gt;です";かれは まじめな がくせいです;"C&#x27;est un étudiant sérieux.";(Nom) 普通名詞[ふつうめいし];Type de postes;Commun;5;Chapitre_01 N5 Noms
+1;きょうし;教師;教師[きょうし];kyōshi;professeur, instituteur (soi même);"彼[かれ]は 高校[こうこう] &lt;b&gt;教師[きょうし]&lt;/b&gt;だ";かれは こうこう きょうしだ;"C&#x27;est un professeur de lycée.";(Nom) 普通名詞[ふつうめいし];Type de postes;Commun;3;Chapitre_01 N3 Noms
+1;にほん;日本;日本[にほん];nihon;le Japon;日本[にほん]は 中国[ちゅうごく]の 東方[とうほう]にある;にほんは ちゅうごくの とうほうにある;"Le Japon se trouve à l&#x27;est de la Chine.";(Nom) 普通名詞[ふつうめいし];Pays, ville, langues;Commun;3;Chapitre_01 N3 Noms
+1;びょういん;病院;病院[びょういん];byōin;hôpital;"&lt;b&gt;病院[びょういん]&lt;/b&gt;はどこですか";びょういんはどこですか;"Où est l&#x27;hôpital ?";(Nom) 普通名詞[ふつうめいし];Bâtiments, pièces, lieu;Commun;5;Chapitre_01 N5 Noms
+1;けんきゅうしゃ;研究者;研究[けんきゅう] 者[しゃ];kenkyūsha;chercheur;;;;(Nom) 普通名詞[ふつうめいし];Type de postes;Commun;X;Chapitre_01 Noms NX
+1;わたし;私;私[わたし];watashi;je, mon, moi (neutre);"&lt;b&gt;私[わたし]&lt;/b&gt;が 行[い]きましょう";わたしが いきましょう;"J&#x27;y vais.";(Pronom) 代名詞[だいめいし];Personne;Commun;5;Chapitre_01 N5 Noms
+1;だれ;誰;誰[だれ];dare;"qui ?, quelqu&#x27;un";"&lt;b&gt;誰[だれ]&lt;/b&gt;と 会[あ]ってみたいですか";だれと あってみたいですか;Qui aimeriez-vous rencontrer?;(Pronom) 代名詞[だいめいし];Idées Abstraites;Commun;5;Chapitre_01 N5 Noms
+1;あなた;貴方;貴方[あなた];anata;tu, toi, ton (neutre);;;;(Pronom) 代名詞[だいめいし];Personne;Commun;5;Chapitre_01 N5 Noms
+1;ぎんこういん;銀行員;銀行[ぎんこう] 員[いん];ginkōin;employé de banque;;;;(Nom) 普通名詞[ふつうめいし];Type de postes;Other;5;Chapitre_01 N5 Noms
+2;～ご;～後;〜 後[ご];～go;après, dans ～(temps);午後;午後;après-midi;(Affixe) 接辞[せつじ];(Suffixe) 接尾辞[せつびじ];Other;5;Affixes Chapitre_02 N5
+2;あのう;あのう;あのう;anou;euh (utilisé pour montrer une hésitation);;;;(Expression) 表現[ひょうげん];;Expression;5;Chapitre_02 Expressions N5
+2;おみやげ;お土産;お 土産[みやげ];omiyage;cadeau, souvenir;"父[ちち]は&lt;b&gt;お 土産[みやげ]&lt;/b&gt;にお 菓子[かし]を 買[か]ってきた";ちちはおみやげにお かしを かってきた;Mon père achetait des bonbons comme souvenir.;(Nom) 普通名詞[ふつうめいし];Objets;Commun;4;Chapitre_02 N4 Noms
+2;カード;カード;カード;kādo;carte (de crédit, de visite);"買[か]いものは&lt;b&gt;カード&lt;/b&gt;でお 願[ねが]いします";かいものはカードでお ねがいします;Veuillez payer vos courses par carte de crédit.;(Nom) 普通名詞[ふつうめいし];Objets;Commun;3;Chapitre_02 N3 Noms
+2;カメラ;カメラ;カメラ;kamera;appareil photo;"&lt;b&gt;カメラ&lt;/b&gt;が 壊[こわ]れた";カメラが こわれた;"Mon appareil photo s&#x27;est cassé.";(Nom) 普通名詞[ふつうめいし];Objets;Commun;5;Chapitre_02 N5 Noms
+2;コーヒー;コーヒー;コーヒー;kōhī;café (boisson, grain);"私[わたし]は 毎朝[まいあさ]&lt;b&gt;コーヒー&lt;/b&gt;を 飲[の]みます";わたしは まいあさコーヒーを のみます;Je bois du café tous les matins.;(Nom) 普通名詞[ふつうめいし];Objets;Commun;5;Chapitre_02 N5 Noms
+2;これからおせわになります;これからお世話になります;これからお 世話[せわ]になります;korekaraosewaninarimasu;"J&#x27;espère pouvoir compter sur votre aide.";;;;(Expression) 表現[ひょうげん];;Expression;5;Chapitre_02 Expressions N5
+2;コンピューター;コンピューター;コンピューター;kompyūtā;ordinateur;"新[あたら]しい&lt;b&gt;コンピューター&lt;/b&gt;を 買[か]った";あたらしいコンピューターを かった;"J&#x27;ai acheté un nouvel ordinateur.";(Nom) 普通名詞[ふつうめいし];Objets;Commun;4;Chapitre_02 N4 Noms
+2;シャープペンシル;シャープペンシル;シャープペンシル;shāpupenshiru;porte-mine;"私[わたし]の&lt;b&gt;シャープペンシル&lt;/b&gt;がありません";わたしのシャープペンシルがありません;Mon criterium n'est pas là.;(Nom) 普通名詞[ふつうめいし];Objets;Commun;X;Chapitre_02 Noms NX
+2;そう;そう;そう;sō;je pense que (idée);"私[わたし]も&lt;b&gt;そう&lt;/b&gt; 思[おも]います";わたしもそう おもいます;"C&#x27;est ce que je pense aussi.";(Nom) 普通名詞[ふつうめいし];Idées Abstraites;Other;X;Chapitre_02 Noms NX
+2;そうですか;そうですか;そうですか;sōdesuka;"Ah bon. Je vois. C&#x27;est vrai ?";;;;(Expression) 表現[ひょうげん];;Expression;5;Chapitre_02 Expressions N5
+2;チョコレート;チョコレート;チョコレート;chokorēto;chocolat;"妹[いもうと]は&lt;b&gt;チョコレート&lt;/b&gt;が 大好[だいす]きです";いもうとはチョコレートが だいすきです;Ma petite sœur aime le chocolat.;(Nom) 普通名詞[ふつうめいし];Objets;Commun;X;Chapitre_02 Noms NX
+2;テレビ;テレビ;テレビ;terebi;télévision;"私[わたし]は&lt;b&gt;テレビ&lt;/b&gt;をあまり 見[み]ません";わたしはテレビをあまり みません;Je ne regarde pas beaucoup de télé.;(Nom) 普通名詞[ふつうめいし];Objets;Commun;5;Chapitre_02 N5 Noms
+2;どうぞ;どうぞ;どうぞ;dōzo;"Voilà. S&#x27;il vous plaît. (utilisé pour offrir quelque chose à quelqu&#x27;un)";;;;(Expression) 表現[ひょうげん];;Expression;5;Chapitre_02 Expressions N5
+2;ノート;ノート;ノート;nōto;cahier, note, PC portable;"&lt;b&gt;ノート&lt;/b&gt;を 開[ひら]いてください";ノートを ひらいてください;Veuillez ouvrir votre ordinateur portable.;(Nom) 普通名詞[ふつうめいし];Objets;Commun;5;Chapitre_02 N5 Noms
+2;ボールペン;ボールペン;ボールペン;bōrupen;stylo-bille;"&lt;b&gt;ボールペン&lt;/b&gt;で 名前[なまえ]を 書[か]いてください";ボールペンで なまえを かいてください;Veuillez écrire votre nom avec un stylo à bille.;(Nom) 普通名詞[ふつうめいし];Objets;Commun;5;Chapitre_02 N5 Noms
+2;ラジオ;ラジオ;ラジオ;rajio;radio;"私[わたし]は 毎朝[まいあさ]&lt;b&gt;ラジオ&lt;/b&gt;を 聴[き]きます";わたしは まいあさラジオを ききます;"J&#x27;écoute la radio tous les matins.";(Nom) 普通名詞[ふつうめいし];Objets;Commun;5;Chapitre_02 N5 Noms
+2;なに (なん);何;何[なに];nani (nan);quoi, que, quel;"この 学生[がくせい]は &lt;b&gt;何[なに]&lt;/b&gt;を 書[か]きましたか";この がくせいは なに (なん)を かきましたか;"Qu&#x27;est-ce que cet étudiant à écrit ?";(Pronom) 代名詞[だいめいし];Idées Abstraites;Commun;5;Chapitre_02 N5 Noms
+2;かさ;傘;傘[かさ];kasa;parapluie;"電車[でんしゃ]に &lt;b&gt;傘[かさ]&lt;/b&gt;を 忘[わす]れた";でんしゃに かさを わすれた;"J&#x27;ai laissé mon parapluie dans le train.";(Nom) 普通名詞[ふつうめいし];Objets;Commun;5;Chapitre_02 N5 Noms
+2;その;其の;其[そ]の;sono;ce ～(là);毎日[まいにち]、 私[わたし]はその 本屋[ほんや]で 彼女[かのじょ]を 待[ま]ちました;まいにち、 わたしはその ほんやで かのじょを まちました;"Tous les jours j&#x27;attendais mon amie à cette librairie.";(Pronom) 代名詞[だいめいし];;Commun;5;Chapitre_02 N5 Noms
+2;それ;其れ;其[そ]れ;sore;cela, ça;それはとってもいい 話[はなし]だ;それはとってもいい はなしだ;"C&#x27;est une très belle histoire.";(Pronom) 代名詞[だいめいし];;Commun;5;Chapitre_02 N5 Noms
+2;めいし;名刺;名刺[めいし];meishi;carte de visite;"私[わたし]たちは &lt;b&gt;名刺[めいし]&lt;/b&gt;を 交換[こうかん]しました";わたしたちは めいしを こうかんしました;Nous avons échangé nos cartes de visite.;(Nom) 普通名詞[ふつうめいし];Objets;Commun;2;Chapitre_02 N2 Noms
+2;あれ;彼;彼[あれ];are;cela là-bas, ça;あれは 何[なん]ですか;あれは なんですか;"Qu&#x27;est ce que c&#x27;est ?";(Pronom) 代名詞[だいめいし];;Commun;4;Chapitre_02 N4 Noms
+2;あの ～;彼の ～;彼[あ]の 〜;ano ～;"ce (cet; cette) là-bas";あのワインのボタルはいくらですか;あのワインのボタルはいくらですか;Combien coûte cette bouteille de vin, là-bas ?;(Pronom) 代名詞[だいめいし];;Commun;1;Chapitre_02 N1 Noms
+2;てちょう;手帳;手帳[てちょう];techō;carnet, agenda;"新[あたら]しい &lt;b&gt;手帳[てちょう]&lt;/b&gt;を 買[か]いました";あたらしい てちょうを かいました;"J&#x27;ai acheté un nouveau carnet.";(Nom) 普通名詞[ふつうめいし];Objets;Commun;2;Chapitre_02 N2 Noms
+2;しんぶん;新聞;新聞[しんぶん];shimbun;journal (papier);"今日[きょう]の &lt;b&gt;新聞[しんぶん]&lt;/b&gt;、どこに 置[お]いた？";きょうの しんぶん、どこに おいた？;"Où avez-vous mis le journal d&#x27;aujourd&#x27;hui?";(Nom) 普通名詞[ふつうめいし];Objets;Commun;5;Chapitre_02 N5 Noms
+2;にほんご;日本語;日本語[にほんご];nihongo;langue japonaise;;;;(Nom) 普通名詞[ふつうめいし];Pays, ville, langues;Commun;X;Chapitre_02 Noms NX
+2;とけい;時計;時計[とけい];tokei;montre, horloge, réveil;"&lt;b&gt;時計[とけい]&lt;/b&gt;を 見[み]たらちょうど３ 時[じ]だった";とけいを みたらちょうど３ じだった;"Il était exactement trois heure lorsque j&#x27;ai regardé l&#x27;horloge.";(Nom) 普通名詞[ふつうめいし];Objets;Commun;5;Chapitre_02 N5 Noms
+2;ほん;本;本[ほん];hon;livre;"&lt;b&gt;本[ほん]&lt;/b&gt;を 買[か]いました";ほんを かいました;"J&#x27;ai acheté un livre.";(Nom) 普通名詞[ふつうめいし];Objets;Commun;5;Chapitre_02 N5 Noms
+2;つくえ;机;机[つくえ];tsukue;bureau (meuble);"新[あたら]しい &lt;b&gt;机[つくえ]&lt;/b&gt;を 買[か]ってもらいました";あたらしい つくえを かってもらいました;"J&#x27;ai reçu le nouveau bureau qu&#x27;on m&#x27;a acheté.";(Nom) 普通名詞[ふつうめいし];Objets;Commun;5;Chapitre_02 N5 Noms
+2;いす;椅子;椅子[いす];isu;chaise;"その 人[ひと]は &lt;b&gt;椅子[いす]&lt;/b&gt;に 座[すわ]った";その ひとは いすに すわった;"Cette personne s&#x27;était assise sur une chaise.";(Nom) 普通名詞[ふつうめいし];Objets;Commun;5;Chapitre_02 N5 Noms
+2;この;此の;此[こ]の;kono;ce ～(ici);このガラスにミルクを 出[だ]しました;このガラスにミルクを だしました;"J&#x27;ai mis du lait dans ce verre.";(Pronom) 代名詞[だいめいし];;Commun;5;Chapitre_02 N5 Noms
+2;これ;此れ;此[こ]れ;kore;ceci;これをください;これをください;"Ceci s&#x27;il vous plait.";(Pronom) 代名詞[だいめいし];;Commun;5;Chapitre_02 N5 Noms
+2;こちらこそよろしく;此方こそ宜しく;此[こ] 方[ちら]こそ 宜[よろ]しく;kochirakosoyoroshiku;"C&#x27;est moi qui suis ravi de vous connaître (réponse)";;;;(Expression) 表現[ひょうげん];;Expression;5;Chapitre_02 Expressions N5
+2;えいご;英語;英語[えいご];eigo;anglais (langue);"あなたは &lt;b&gt;英語[えいご]&lt;/b&gt;が 話[はな]せますか&lt;br&gt;(～が～える/できる)";"あなたは えいごが はなせますか&lt;br&gt;(～が～える/できる)";Pouvez-vous parler anglais?;(Nom) 普通名詞[ふつうめいし];Pays, ville, langues;Commun;5;Chapitre_02 N5 Noms
+2;くるま;車;車[くるま];kuruma;voiture, véhicule;"弟[おとうと]が &lt;b&gt;車[くるま]&lt;/b&gt;を 買[か]った";おとうとが くるまを かった;Mon petit frère a acheté une voiture.;(Nom) 普通名詞[ふつうめいし];Moyen de transport;Commun;5;Chapitre_02 N5 Noms
+2;じしょ;辞書;辞書[じしょ];jisho;dictionnaire;"彼女[かのじょ]は &lt;b&gt;辞書[じしょ]&lt;/b&gt;をよく 使[つか]います";かのじょは じしょをよく つかいます;Elle utilise souvent un dictionnaire.;(Nom) 普通名詞[ふつうめいし];Objets;Commun;5;Chapitre_02 N5 Noms
+2;ちがいます;違います;違[ちが]います;chigaimasu;"Non, ce n&#x27;est pas cela. &lt;br&gt;Vous vous trompez.";;;;(Expression) 表現[ひょうげん];;Expression;5;Chapitre_02 Expressions N5
+2;えんぴつ;鉛筆;鉛筆[えんぴつ];empitsu;crayon;"&lt;b&gt;鉛筆[えんぴつ]&lt;/b&gt;を 貸[か]してください";えんぴつを かしてください;"Prête-moi un crayon s&#x27;il-te-plaît.";(Nom) 普通名詞[ふつうめいし];Objets;Commun;5;Chapitre_02 N5 Noms
+2;かぎ;鍵;鍵[かぎ];kagi;clef;"出[で]かけるときは &lt;b&gt;鍵[かぎ]&lt;/b&gt;を 掛[か]けてください";でかけるときは かぎを かけてください;Veuillez fermer la porte à clé quand vous partez.;(Nom) 普通名詞[ふつうめいし];Objets;Commun;5;Chapitre_02 N5 Noms
+2;ざっし;雑誌;雑誌[ざっし];zasshi;revue, magasine;"この &lt;b&gt;雑誌[ざっし]&lt;/b&gt;はよく 売[う]れています";この ざっしはよく うれています;Ce magazine se vend bien.;(Nom) 普通名詞[ふつうめいし];Objets;Commun;5;Chapitre_02 N5 Noms
+2;かばん;鞄;鞄[かばん];kaban;sac, cartable;"その 黒[くろ]い &lt;b&gt;鞄[かばん]&lt;/b&gt;は 僕[ぼく]のです";その くろい かばんは ぼくのです;La mallette noire est la mienne.;(Nom) 普通名詞[ふつうめいし];Objets;Commun;5;Chapitre_02 N5 Noms
+3;〜えん;〜円;〜 円[えん];〜en;Yen (monnaie du Japon);;;;(Affixe) 接辞[せつじ];(Suffixe) 接尾辞[せつびじ];Commun;3;Affixes Chapitre_03 N3
+3;～をください;～をください;〜 をください;～okudasai;"Donnez-moi [～], s&#x27;il vous plaît";;;;(Expression) 表現[ひょうげん];;Expression;4;Chapitre_03 Expressions N4
+3;～をみせてください;～を見せてください;〜 を 見[み]せてください;～omisetekudasai;"Montrez moi s&#x27;il vous plaît ?";;;;(Expression) 表現[ひょうげん];;Expression;5;Chapitre_03 Expressions N5
+3;〜かい;～階;〜 階[かい];〜kai;(compteur pour les étages);;;;(Affixe) 接辞[せつじ];(Suffixe) 接尾辞[せつびじ];Commun;1;Affixes Chapitre_03 N1
+3;いらっしゃいませ;いらっしゃいませ;いらっしゃいませ;irasshaimase;Bonjour. (Litt.: Bienvenu(e).);;;;(Expression) 表現[ひょうげん];;Expression;5;Chapitre_03 Expressions N5
+3;エスカレーター;エスカレーター;エスカレーター;esukarētā;escalator;"３ 階[かい]まで&lt;b&gt;エスカレーター&lt;/b&gt;で 行[い]きましょう";３ かいまでエスカレーターで いきましょう;"Allons jusqu&#x27;au troisième étage en escalator.";(Nom) 普通名詞[ふつうめいし];Bâtiments, pièces, lieu;Commun;4;Chapitre_03 N4 Noms
+3;エレベーター;エレベーター;エレベーター;erebētā;ascenseur;"&lt;b&gt;エレベーター&lt;/b&gt;で 下[した]に 降[お]りましょう";エレベーターで したに おりましょう;"Sortons en bas par l&#x27;ascenseur.";(Nom) 普通名詞[ふつうめいし];Bâtiments, pièces, lieu;Commun;5;Chapitre_03 N5 Noms
+3;おてあらい;お手洗い;お 手洗[てあら]い;otearai;toilettes, salle de bain;"&lt;b&gt;お 手洗[てあら]い&lt;/b&gt;はどこですか";おてあらいはどこですか;Où est la salle de bain?;(Nom) 普通名詞[ふつうめいし];Bâtiments, pièces, lieu;Commun;5;Chapitre_03 N5 Noms
+3;じゃ;じゃ;じゃ;ja;eh bien, alors;;;;(Expression) 表現[ひょうげん];;Expression;5;Chapitre_03 Expressions N5
+3;スイス;スイス;スイス;suisu;Suisse;"これは&lt;b&gt;スイス&lt;/b&gt;のですか";これはスイスのですか;"Est que c&#x27;est Suisse ?";(Nom) 普通名詞[ふつうめいし];Pays, ville, langues;Commun;X;Chapitre_03 Noms NX
+3;トイレ;トイレ;トイレ;toire;toilettes;"&lt;b&gt;トイレ&lt;/b&gt;を 掃除[そうじ]しましたか";トイレを そうじしましたか;As-tu nettoyé les toilettes?;(Nom) 普通名詞[ふつうめいし];Bâtiments, pièces, lieu;Commun;5;Chapitre_03 N5 Noms
+3;ネクタイ;ネクタイ;ネクタイ;nekutai;cravate;"父[ちち]の 日[ひ]に&lt;b&gt;ネクタイ&lt;/b&gt;をプレゼントした";ちちの ひにネクタイをプレゼントした;Je lui ai offert une cravate en cadeau pour la fête des pères.;(Nom) 普通名詞[ふつうめいし];Objets;Commun;5;Chapitre_03 N5 Noms
+3;ロビー;ロビー;ロビー;robī;hall;"ホテルの&lt;b&gt;ロビー&lt;/b&gt;で 待[ま]っています";ホテルのロビーで まっています;"J&#x27;attends dans le hall de l&#x27;hôtel.";(Nom) 普通名詞[ふつうめいし];Bâtiments, pièces, lieu;Commun;2;Chapitre_03 N2 Noms
+3;ワイン;ワイン;ワイン;wain;vin;"&lt;b&gt;ワイン&lt;/b&gt;を 少[すこ]し 飲[の]みました";ワインを すこし のみました;"J&#x27;ai bu un peu de vin.";(Nom) 普通名詞[ふつうめいし];Objets;Commun;3;Chapitre_03 N3 Noms
+3;まん;万;万[まん];man;10;;;;;;Other;5;Chapitre_03 Classificateurs N5
+3;じむしょ;事務所;事務所[じむしょ];jimusho;bureau (pièce);"後[あと]で &lt;b&gt;事務所[じむしょ]&lt;/b&gt;に 来[き]てください";あとで じむしょに きてください;"Veuillez venir au bureau tout à l&#x27;heure.";(Nom) 普通名詞[ふつうめいし];Bâtiments, pièces, lieu;Commun;4;Chapitre_03 N4 Noms
+3;かいしゃ;会社;会社[かいしゃ];kaisha;société, entreprise;"彼[かれ]は 小[ちい]さな &lt;b&gt;会社[かいしゃ]&lt;/b&gt;に 勤[つと]めています";かれは ちいさな かいしゃに つとめています;Il est employé par une petite entreprise.;(Nom) 普通名詞[ふつうめいし];Bâtiments, pièces, lieu;Commun;5;Chapitre_03 N5 Noms
+3;かいぎしつ;会議室;会議[かいぎ] 室[しつ];kaigishitsu;salle de réunion;会議室[かいぎしつ]は 閉[し]まっています;かいぎしつは しまっています;La salle de réunion est fermée.;(Nom) 普通名詞[ふつうめいし];Bâtiments, pièces, lieu;Commun;4;Chapitre_03 N4 Noms
+3;どこ;何処;何処[どこ];doko;où, quel endroit ?;あの 本[ほん]をどこに 置[お]きましたか;あの ほんをどこに おきましたか;Où avez-vous mis ce livre?;(Pronom) 代名詞[だいめいし];Idées Abstraites;Commun;5;Chapitre_03 N5 Noms
+3;なんかい;何回 / 何階;何[なん] 回[かい] / 何[なん] 階[かい];nankai;combien de fois / quel étage;;;;回;;Other;4;Chapitre_03 Classificateurs N4
+3;どちら;何方;何方[どちら];dochira;lequel, par où;肉[にく]と 魚[さかな]とどちらが 好[す]きですか;にくと さかなとどちらが すきですか;Que préférez-vous, viande ou poisson?;(Nom) 普通名詞[ふつうめいし];Idées Abstraites;Commun;5;Chapitre_03 N5 Noms
+3;ここ;個々;個々[ここ];koko;ici;ここに 本[ほん]があります;ここに ほんがあります;Il y a un livre ici.;(Pronom) 代名詞[だいめいし];;Commun;1;Chapitre_03 N1 Noms
+3;そこ;其処;其[其] 処[そこ];soko;là;そこに 座[すわ]ってください;そこに すわってください;"Asseyez vous là s&#x27;il vous plait.";(Pronom) 代名詞[だいめいし];;Commun;5;Chapitre_03 N5 Noms
+3;そちら;其方;其[其] 方[そちら];sochira;par là, en ce qui vous concerne;夕方[ゆうがた]そちらに 着[つ]きます;ゆうがたそちらに つきます;"J&#x27;arriverai par là dans la soirée.";(Pronom) 代名詞[だいめいし];;Commun;5;Chapitre_03 N5 Noms
+3;せん;千;千[せん];sen;1000;;;;;;Other;5;Chapitre_03 Classificateurs N5
+3;うけつけ;受付;受付[うけつけ];uketsuke;"réception (d&#x27;un hôtel...), accueil";"&lt;b&gt;受付[うけつけ]&lt;/b&gt;は９ 時[じ]からです";うけつけは９ じからです;"L&#x27;inscription commence à 9 heures.";(Nom) 普通名詞[ふつうめいし];Bâtiments, pièces, lieu;Commun;4;Chapitre_03 N4 Noms
+3;くに;国;国[くに];kuni;pays, région, province;"私[わたし]の &lt;b&gt;国[くに]&lt;/b&gt;について 少[すこ]しお 話[はなし]しましょう";わたしの くにについて すこしお はなししましょう;Permettez-moi de vous parler un peu de mon pays.;(Nom) 普通名詞[ふつうめいし];Idées Abstraites;Commun;5;Chapitre_03 N5 Noms
+3;ちか;地下;地下[ちか];chika;sous-sol;"スタジオは &lt;b&gt;地下[ちか]&lt;/b&gt;にあります";スタジオは ちかにあります;Le studio est au sous-sol.;(Nom) 普通名詞[ふつうめいし];Bâtiments, pièces, lieu;Commun;3;Chapitre_03 N3 Noms
+3;うりば;売り場;売[う]り 場[ば];uriba;lieu de vente, surface de vente;"くつ &lt;b&gt;売[う]り 場[ば]&lt;/b&gt;はどこですか";くつ うりばはどこですか;Où est le rayon des chaussures ?;(Nom) 普通名詞[ふつうめいし];Bâtiments, pièces, lieu;Commun;4;Chapitre_03 N4 Noms
+3;うち;家・内;家[いえ]・ 内[ない];uchi;maison, chez soi;家[うち]に 帰[かえ]って 妹[いもうと]に 電話[でんわ]しました;うちに かえって いもうとに でんわしました;"Je suis rentré chez moi et j&#x27;ai appelé ma petite sœur.";(Nom) 普通名詞[ふつうめいし];Bâtiments, pièces, lieu;Commun;5;Chapitre_03 N5 Noms
+3;いくら;幾ら;幾[いく]ら;ikura;combien ? (prix);いくら 呼[よ]んでも 彼[かれ]は 返事[へんじ]をしなかったわ;いくら よんでも かれは へんじをしなかったわ;"Peu importe combien de fois j&#x27;ai appelé, il n&#x27;a pas répondu.";(adv) 副詞[ふくし];Adverbes interrogatifs et exclamatifs;Commun;5;Chapitre_03 Mots_Invariables N5
+3;あそこ;彼処;彼処[あそこ];asoko;"là-bas (loin du locuteur et de l&#x27;interlocuteur)";あそこから 人[ひと]が 見[み]えた;あそこから ひとが みえた;"J&#x27;ai vu une personne de là-bas.";(Pronom) 代名詞[だいめいし];Bâtiments, pièces, lieu;Commun;5;Chapitre_03 N5 Noms
+3;あちら / かなた;彼方;彼方[かなた];achira / kanata;ce côté-là (là-bas) (2 options);飛行機[ひこうき]が 空[そら]のかなたに 飛[と]んで 行[い]った;ひこうきが そらのかなたに とんで いった;"L&#x27;avion volait haut dans le ciel.";(Pronom) 代名詞[だいめいし];Bâtiments, pièces, lieu;Commun;5;Chapitre_03 N5 Noms
+3;きょうしつ;教室;教室[きょうしつ];kyōshitsu;salle de classe;"私[わたし]の &lt;b&gt;教室[きょうしつ]&lt;/b&gt;は３ 階[かい]にあります";わたしの きょうしつは３ かいにあります;Ma salle de classe est au troisième étage.;(Nom) 普通名詞[ふつうめいし];Bâtiments, pièces, lieu;Commun;X;Chapitre_03 Noms NX
+3;こちら;此方;此[此] 方[かた];kochira;par ici, en ce qui me concerne;受付[うけつけ]はこちらです;うけつけはこちらです;La réception est par ici.;(Nom) 普通名詞[ふつうめいし];Idées Abstraites;Commun;5;Chapitre_03 N5 Noms
+3;すみません;済みません;済[す]みません;sumimasen;Excusez-moi;;;;(Expression) 表現[ひょうげん];;Expression;5;Chapitre_03 Expressions N5
+3;ひゃく;百;百[ひゃく];hyaku;100;;;;;;Other;5;Chapitre_03 Classificateurs N5
+3;じどうはんばいき;自動販売機;自動[じどう] 販売[はんばい] 機[き];jidōhanbaiki;distributeur automatique;この 自動販売機[じどうはんばいき]は 空[そら]です;この じどうはんばいきは そらです;Ce distributeur automatique est vide.;(Nom) 普通名詞[ふつうめいし];Objets;Commun;X;Chapitre_03 Noms NX
+3;へや;部屋;部屋[へや];heya;chambre;"私[わたし]の &lt;b&gt;部屋[へや]&lt;/b&gt;は２ 階[かい]にあります";わたしの へやは２ かいにあります;Ma chambre est au deuxième étage.;(Nom) 普通名詞[ふつうめいし];Bâtiments, pièces, lieu;Commun;5;Chapitre_03 N5 Noms
+3;かいだん;階段;階段[かいだん];kaidan;escaliers;"私[わたし]たちは 駅[えき]の &lt;b&gt;階段[かいだん]&lt;/b&gt;を 登[のぼ]りました";わたしたちは えきの かいだんを のぼりました;Nous avons monté les escaliers de la gare.;(Nom) 普通名詞[ふつうめいし];Bâtiments, pièces, lieu;Commun;5;Chapitre_03 N5 Noms
+3;でんわ;電話;電話[でんわ];denwa;téléphone;"あとで &lt;b&gt;電話[でんわ]&lt;/b&gt;します";あとで でんわします;"Je t&#x27;appellerai plus tard.";(Nom) 普通名詞[ふつうめいし];Objets;Commun;5;Chapitre_03 N5 Noms
+3;くつ;靴;靴[くつ];kutsu;chaussures;"&lt;b&gt;靴[くつ]&lt;/b&gt;が 汚[きた]いです";くつが きたいです;Mes chaussures sont sales.;(Nom) 普通名詞[ふつうめいし];Objets;Commun;5;Chapitre_03 N5 Noms
+3;しょくどう;食堂;食堂[しょくどう];shokudō;salle à manger, cafeteria;"大学[だいがく]の &lt;b&gt;食堂[しょくどう]&lt;/b&gt;は 安[やす]い";だいがくの しょくどうは やすい;"La cafétéria de l&#x27;université est bon marché.";(Nom) 普通名詞[ふつうめいし];Bâtiments, pièces, lieu;Commun;5;Chapitre_03 N5 Noms
