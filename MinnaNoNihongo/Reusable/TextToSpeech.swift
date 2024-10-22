@@ -8,6 +8,8 @@
 import AVFoundation
 var player: AVAudioPlayer?
 
+import Foundation
+
 import SwiftUI
 
 @MainActor
@@ -15,10 +17,10 @@ struct TextToSpeech: View {
     var text: String
     var size: CGFloat
     
-    let elevenApi = ElevenLabsApi()
     @State private var url: URL?
     
     init(text: String, size: CGFloat) {
+        self.url = Bundle.main.url(forResource: "\(text)", withExtension: ".wav")
         self.text = text.replacingOccurrences(of: "〜", with: "")
         self.size = size
     }
@@ -49,12 +51,12 @@ struct TextToSpeech: View {
         .tint(.black)
         .task(id: text) {
             url = nil
-            url = try? await self.elevenApi.textToSpeech(voice_id: "8EkOjt4xTPGMclNlh1pk", text: text, model: "eleven_turbo_v2_5")
+            url = Bundle.main.url(forResource: "\(text)", withExtension: ".wav")
         }
         
     }
 }
 
 #Preview {
-    TextToSpeech(text: "Ohayou Gozaimasu", size: 50)
+    TextToSpeech(text: "あなたの お おとうさんはおいくつですか", size: 50)
 }

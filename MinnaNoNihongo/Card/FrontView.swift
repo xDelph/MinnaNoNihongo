@@ -33,11 +33,24 @@ struct FrontView: View {
     }
 }
 
-#Preview {
+#Preview("Sample", traits: .sizeThatFitsLayout) {
     @Previewable @State var background: Color = .white
     
-    return FrontView(
+    FrontView(
         card: CardDTO.sample,
         background: $background
     )
+    .padding()
+    .background(.black)
+}
+
+#Preview("Sample2", traits: .sizeThatFitsLayout) {
+    @Previewable @State var background: Color = .white
+    
+    FrontView(
+        card: CardDTO.sample2,
+        background: $background
+    )
+    .padding()
+    .background(.black)
 }

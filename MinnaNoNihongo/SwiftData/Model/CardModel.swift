@@ -205,9 +205,9 @@ final class CardDTO: Sendable, Identifiable, Codable, Equatable {
     static let sample2 = CardDTO(
         id: UUID(),
         chapter: 1,
-        kana: "せつじ",
-        kanji: "せつじ",
-        furigana: "せつじ",
+        kana: "〜さん",
+        kanji: "〜さん",
+        furigana: "〜 さん",
         romaji: "〜san",
         traduction: "Mme. M. (titre de respect ajouté à un nom)",
         sampleKanji: "",

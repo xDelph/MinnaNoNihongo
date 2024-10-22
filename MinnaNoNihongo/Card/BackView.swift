@@ -73,11 +73,20 @@ struct BackView: View {
     }
 }
 
-#Preview {
+#Preview("Sample") {
     @Previewable @State var background: Color = .white
     
     return BackView(
         card: CardDTO.sample,
+        background: $background
+    )
+}
+
+#Preview("Sample2") {
+    @Previewable @State var background: Color = .white
+    
+    return BackView(
+        card: CardDTO.sample2,
         background: $background
     )
 }

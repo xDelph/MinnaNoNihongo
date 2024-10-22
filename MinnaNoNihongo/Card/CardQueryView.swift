@@ -142,5 +142,7 @@ struct CardQueryView: View {
 }
 
 #Preview {
-    CardQueryView(modelContainer: previewContainer, isTraining: false, selectedChapter: 1)
+    MainActor.assumeIsolated {
+        CardQueryView(modelContainer: previewContainer, isTraining: false, selectedChapter: 1)
+    }
 }
