@@ -14,14 +14,14 @@ import SwiftUI
 
 @MainActor
 struct TextToSpeech: View {
-    var text: String
+    var sound: String
     var size: CGFloat
     
     @State private var url: URL?
     
-    init(text: String, size: CGFloat) {
-        self.url = Bundle.main.url(forResource: "\(text)", withExtension: ".wav")
-        self.text = text.replacingOccurrences(of: "〜", with: "")
+    init(sound: String, size: CGFloat) {
+        self.url = Bundle.main.url(forResource: "\(sound)", withExtension: ".wav")
+        self.sound = sound
         self.size = size
     }
     
@@ -49,14 +49,14 @@ struct TextToSpeech: View {
                 .padding()
         }
         .tint(.black)
-        .task(id: text) {
+        .task(id: sound) {
             url = nil
-            url = Bundle.main.url(forResource: "\(text)", withExtension: ".wav")
+            url = Bundle.main.url(forResource: "\(sound)", withExtension: ".wav")
         }
         
     }
 }
 
 #Preview {
-    TextToSpeech(text: "あなたの お おとうさんはおいくつですか", size: 50)
+    TextToSpeech(sound: "dōzoyoroshikuonegaishimasu", size: 50)
 }

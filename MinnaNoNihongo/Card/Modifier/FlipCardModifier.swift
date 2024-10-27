@@ -18,12 +18,13 @@ struct FlipCard: ViewModifier {
                 axis: (x: 0, y: 1, z: 0)
             )
             .onTapGesture {
-                if cardStatus == CardStatus.FRONT {
+                if cardStatus == .FRONT {
                     withAnimation(Animation.easeIn(duration: 0.50), {
                         angle = -90
                     }, completion: {
+                        cardStatus = .BACK
+                        
                         withAnimation(Animation.easeOut(duration: 0.25), {
-                            cardStatus = CardStatus.BACK
                             angle = -180
                         })
                     })

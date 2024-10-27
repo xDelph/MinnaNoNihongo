@@ -29,7 +29,7 @@ struct FrontView: View {
             .multilineTextAlignment(.center)
         }
         .transition(.identity)
-        .frame(width: 250, height: 450)
+//        .frame(width: 250, height: 450)
     }
 }
 

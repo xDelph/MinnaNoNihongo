@@ -21,7 +21,7 @@ struct BackView: View {
             VStack(alignment: .trailing) {
                 HStack {
                     Spacer()
-                    TextToSpeech(text: card.kana, size: 40)
+                    TextToSpeech(sound: card.romaji, size: 40)
                 }
                 
                 Spacer()
@@ -43,10 +43,17 @@ struct BackView: View {
                 if !card.sampleKanji.isEmpty {
                     Spacer()
                     Divider()
-                    
-                    FuriganaView(card.sampleKanji, size: 20)
-                        .font(.largeTitle)
-                        .foregroundStyle(.black)
+                
+                    HStack {
+                        TextToSpeech(sound: "\(card.romaji)-sample", size: 30)
+//                            .offset(x: -5, y: 5)
+                        
+                        VStack {
+                            FuriganaView(card.sampleKanji, size: 20)
+                                .font(.largeTitle)
+                                .foregroundStyle(.black)
+                        }
+                    }
                     
                     Text(LocalizedStringKey(card.sampleTraduction))
                         .font(.subheadline)
@@ -69,7 +76,7 @@ struct BackView: View {
             }
         }
         .transition(.identity)
-        .frame(width: 250, height: 450)
+//        .frame(width: 250, height: 450)
     }
 }
 
@@ -80,6 +87,7 @@ struct BackView: View {
         card: CardDTO.sample,
         background: $background
     )
+    .padding(20)
 }
 
 #Preview("Sample2") {
@@ -89,4 +97,5 @@ struct BackView: View {
         card: CardDTO.sample2,
         background: $background
     )
+    .padding(20)
 }

@@ -28,7 +28,7 @@ struct FuriganaView: View {
         let matches: [String] = text
             .replacingOccurrences(of: "&lt;b&gt;", with: "**")
             .replacingOccurrences(of: "&lt;/b&gt;", with: "**")
-            .matches(of: /((\*\*)?(\p{Script=Han})*\[(\p{Script=Hiragana})*\](\*\*)?)|(\p{Script=Katakana}|\p{Script=Hiragana})/)
+            .matches(of: /((\*\*)?(\p{Script=Han})*\[(\p{Script=Hiragana})*\](\*\*)?)|(\p{Script=Katakana}|\p{Script=Hiragana})|(〜|\~|\/|\(|\))/)
             .map { String($0.output.0) }
         
         for match in matches {
@@ -46,7 +46,7 @@ struct FuriganaView: View {
             }
         }
         
-        self.furiganas = furiganas.chunked(into: Int(230/size)+1)
+        self.furiganas = furiganas.chunked(maxChunk: 2, minSize: 8)
     }
     
     func furiganaView(_ furiganas: [Furigana]) -> some View {
@@ -56,13 +56,14 @@ struct FuriganaView: View {
                     Text(furigana.kana)
                         .font(.system(size: CGFloat(size/2)))
                         .offset(y: 3)
-                        .frame(width: CGFloat(size*furigana.kanji.count*2))
+//                        .frame(width: CGFloat(size*furigana.kanji.count*2))
                         .fontWeight(furigana.bold ? .bold : .regular)
                     Text(furigana.kanji)
-                        .font(.system(size: CGFloat(size)))
+//                        .font(.system(size: CGFloat(size)))
                         .fontWeight(furigana.bold ? .bold : .regular)
                 }
-                .frame(width: CGFloat(size*furigana.kanji.count))
+                                        .font(.system(size: CGFloat(size)))
+//                .frame(width: CGFloat(size*furigana.kanji.count))
             }
         }
     }
@@ -76,12 +77,12 @@ struct FuriganaView: View {
 
 #Preview {
     VStack {
-        FuriganaView("あの 人[ひと]", size: 80)
+        FuriganaView("〜あの 人[ひと]", size: 70)
         
         FuriganaView("あの", size: 60)
         
         FuriganaView("失[ひと]の 人[ひとひ]", size: 40)
         FuriganaView("失礼[しつれい]ですが")
-        FuriganaView("パンダは &lt;b&gt;中国[ちゅうごく]&lt;/b&gt;から 来[き]ています", size: 40)
+        FuriganaView("あなたは &lt;b&gt;英語[えいご]&lt;/b&gt;が 話[はな]せますか&lt;br&gt;(～が～える/できる)", size: 40)
     }
 }

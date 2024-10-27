@@ -185,20 +185,20 @@ final class CardDTO: Sendable, Identifiable, Codable, Equatable {
     
     static let sample = CardDTO(
         id: UUID(),
-        chapter: 1,
-        kana: "ちゅうごく",
-        kanji: "中国",
-        furigana: "中国[ちゅうごく]",
-        romaji: "chūgoku",
-        traduction: "Chine",
-        sampleKanji: "パンダは &lt;b&gt;中国[ちゅうごく]&lt;/b&gt;から 来[き]ています",
-        sampleKana: "",
-        sampleTraduction: "Les pandas viennent de Chine.",
+        chapter: 3,
+        kana: "くに",
+        kanji: "国",
+        furigana: "国[くに]",
+        romaji: "kuni",
+        traduction: "pays, région, province",
+        sampleKanji: "私[わたし]の &lt;b&gt;国[くに]&lt;/b&gt;について 少[すこ]しお 話[はなし]しましょう",
+        sampleKana: "わたしの くにについて すこしお はなししましょう",
+        sampleTraduction: "Permettez-moi de vous parler un peu de mon pays.",
         type: "(Nom) 普通名詞[ふつうめいし]",
-        subGroup: "Pays, ville, langues",
+        subGroup: "Idées Abstraites",
         group: "Commun",
-        jlpt: "X",
-        tags: "Chapitre_01 Noms NX",
+        jlpt: "5",
+        tags: "Chapitre_03 N5 Noms",
         value: 0
     )
     
