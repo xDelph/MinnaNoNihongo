@@ -54,6 +54,13 @@ struct ChapterListView: View {
                                 router.navigate(to: .chapter(isTraining, chapter.chapter))
                             }
                         }
+                        HStack {
+                            Text("More to come...")
+                            Spacer()
+                        }
+                        .foregroundStyle(.gray)
+                        .contentShape(Rectangle())
+                        .frame(maxWidth: .infinity)
                     } header: {
                         Text("Minna no nihongo (beginner)")
                     }
