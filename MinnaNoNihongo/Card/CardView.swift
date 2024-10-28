@@ -8,7 +8,10 @@
 import SwiftUI
 
 enum CardStatus: Equatable {
-    case FRONT, BACK, DISAPPEAR_NOK, DISAPPEAR_OK, DISAPPEAR_TRAINING, NEXT
+    case FRONT, BACK, DISAPPEAR, NEXT
+}
+enum SwipeDirection {
+    case none, left, right, finished
 }
 
 struct CardView: View {
@@ -34,7 +37,8 @@ struct CardView: View {
     @State private var angle: Double = 0
     @State private var opacityAnimation: Double = 1.0
     @State private var offsetAnimation: CGFloat = 0
-    @State private var backgroundAnimation: Color = .white
+    @State private var backgroundAnimation: Color = .black
+    @State var swipeDirection: SwipeDirection = .none
     
     var body: some View {
         VStack {
@@ -44,7 +48,7 @@ struct CardView: View {
                         .frame(maxWidth: .infinity)
                 }
                 
-                if cardStatus != .FRONT && cardStatus != .NEXT {
+                if cardStatus == .BACK {
                     BackView(card: card, background: $backgroundAnimation)
                         .frame(maxWidth: .infinity)
                         .rotation3DEffect(
@@ -55,46 +59,38 @@ struct CardView: View {
             }
             .padding(.vertical, 30)
             .flipCardOnTap(angle: $angle, cardStatus: $cardStatus)
+            .if(!isTraining) { $0.addSwipeAction($swipeDirection) }
         }
-        .onChange(of: cardStatus) { _, newValue in
-            switch(newValue) {
-            case .DISAPPEAR_NOK :
-                withAnimation(Animation.easeOut(duration: 0.25), {
-                    opacityAnimation = 0
-                    offsetAnimation = -30
-                    backgroundAnimation = .red
-                }, completion: {
-                    angle = 0
+        .onChange(of: swipeDirection) { _, newSwipeDirection in
+            switch(newSwipeDirection) {
+            case .left:
+                backgroundAnimation = .red
+            case .right:
+                backgroundAnimation = .green
+            case .none:
+                backgroundAnimation = .black
+            case .finished:
+                cardStatus = .DISAPPEAR
+                backgroundAnimation = .black
+                return
+            }
+        }
+        .onChange(of: cardStatus) { _, newCardStatus in
+            switch(newCardStatus) {
+            case .DISAPPEAR:
+                opacityAnimation = 0
+                angle = 0
+                DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
                     cardStatus = .NEXT
-                })
+                }
                 
-            case .DISAPPEAR_OK :
-                withAnimation(Animation.easeOut(duration: 0.25), {
-                    opacityAnimation = 0
-                    offsetAnimation = 30
-                    backgroundAnimation = .green
-                }, completion: {
-                    angle = 0
-                    cardStatus = .NEXT
-                })
-                
-            case .DISAPPEAR_TRAINING :
-                withAnimation(Animation.easeOut(duration: 0.25), {
-                    opacityAnimation = 0
-                }, completion: {
-                    angle = 0
-                    cardStatus = .NEXT
-                })
-                
-            case .NEXT :
+            case .NEXT:
                 opacityAnimation = 1
                 offsetAnimation = 0
-                backgroundAnimation = .white
                 
-                
-                cardStatus = isTraining ? .BACK : .FRONT
-                disappeared()
-            
+                DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
+                    disappeared()
+                }
             case .FRONT:
                 return
             case .BACK:
@@ -103,10 +99,11 @@ struct CardView: View {
         }
         .opacity(opacityAnimation)
         .offset(x: offsetAnimation)
+        .animation(.easeInOut, value: opacityAnimation)
     }
 }
 
-#Preview {
+#Preview("Test") {
     @Previewable @State var cardStatus: CardStatus = .FRONT
     
     CardView(
@@ -116,9 +113,16 @@ struct CardView: View {
     )
     .padding(.vertical, 30)
     .padding(.horizontal, 20)
-    .onTapGesture(count: 2) {
-        if cardStatus == .BACK {
-            cardStatus = .DISAPPEAR_TRAINING
-        }
-    }
+}
+
+#Preview("Train") {
+    @Previewable @State var cardStatus: CardStatus = .BACK
+    
+    CardView(
+        card: CardDTO.sample2,
+        isTraining: true,
+        cardStatus: $cardStatus
+    )
+    .padding(.vertical, 30)
+    .padding(.horizontal, 20)
 }

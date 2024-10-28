@@ -21,8 +21,6 @@ struct CardQueryView: View {
     
     @State private var cardStatus: CardStatus = CardStatus.FRONT
     
-    @State private var backgroundAnimation: Color = .white
-    
     init(modelContainer: ModelContainer, isTraining: Bool, selectedChapter: Int) {
         self.modelContainer = modelContainer
         cardViewModel = CardQueryViewModel(modelContainer: modelContainer)
@@ -47,40 +45,42 @@ struct CardQueryView: View {
                                         for: selectedChapter,
                                         previousCard: card!
                                     )
+                                    cardStatus = isTraining ? .BACK : .FRONT
                                 }
                             }
                         )
                         
-                        HStack {
-                            if !isTraining {
+                        if isTraining && cardStatus != .DISAPPEAR && cardStatus != .NEXT {
+                            HStack {
+//                                if !isTraining {
+//                                    Button() {
+//                                        Task {
+//                                            cardStatus = .DISAPPEAR
+//                                            try? await cardViewModel.backgroundUpdateValue(card, value: -1)
+//                                        }
+//                                    } label: {
+//                                        Image(systemName: "xmark.circle")
+//                                            .resizable()
+//                                            .frame(width: 50, height: 50)
+//                                            .foregroundStyle(.red)
+//                                    }
+//                                    
+//                                    Spacer()
+//                                }
+                                
                                 Button() {
                                     Task {
-                                        cardStatus = .DISAPPEAR_NOK
-                                        
-                                        try? await cardViewModel.backgroundUpdateValue(card, value: -1)
+                                        cardStatus = .DISAPPEAR
+                                        if !isTraining {
+                                            try? await cardViewModel.backgroundUpdateValue(card, value: +1)
+                                        }
                                     }
                                 } label: {
-                                    Image(systemName: "xmark.circle")
+                                    Image(systemName: "checkmark.circle")
                                         .resizable()
                                         .frame(width: 50, height: 50)
-                                        .foregroundStyle(.red)
+                                        .foregroundStyle(.green)
                                 }
-                                
-                                Spacer()
-                            }
-                            
-                            Button() {
-                                Task {
-                                    cardStatus = !isTraining ? .DISAPPEAR_OK : .DISAPPEAR_TRAINING
-                                    
-                                    try? await cardViewModel.backgroundUpdateValue(card, value: +1)
-                                    
-                                }
-                            } label: {
-                                Image(systemName: "checkmark.circle")
-                                    .resizable()
-                                    .frame(width: 50, height: 50)
-                                    .foregroundStyle(.green)
                             }
                         }
                     }
@@ -105,8 +105,14 @@ struct CardQueryView: View {
     }
 }
 
-#Preview {
+#Preview("Test") {
     MainActor.assumeIsolated {
         CardQueryView(modelContainer: previewContainer, isTraining: false, selectedChapter: 1)
+    }
+}
+
+#Preview("Train") {
+    MainActor.assumeIsolated {
+        CardQueryView(modelContainer: previewContainer, isTraining: true, selectedChapter: 1)
     }
 }

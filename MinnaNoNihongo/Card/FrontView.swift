@@ -15,8 +15,8 @@ struct FrontView: View {
     var body: some View {
         ZStack {
             RoundedRectangle(cornerRadius: 25)
-                .fill(background)
-                .shadow(radius: 10)
+                .fill(.white)
+                .shadow(color: background, radius: 10)
             
             RibbonView(text: card.jlpt, value: card.value)
             
