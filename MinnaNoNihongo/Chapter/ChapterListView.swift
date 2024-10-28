@@ -38,7 +38,11 @@ struct ChapterListView: View {
                         .contentShape(Rectangle())
                         .frame(maxWidth: .infinity)
                         .foregroundStyle(.gray)
+                    } header: {
+                        Text("By themes")
+                    }
                         
+                    Section {
                         ForEach(chapters, id:\.self.id) { chapter in
                             HStack {
                                 Text("Chapter \(chapter.chapter)")
@@ -51,7 +55,7 @@ struct ChapterListView: View {
                             }
                         }
                     } header: {
-                        Text("Available chapters")
+                        Text("Minna no nihongo (beginner)")
                     }
                 }
             } else {

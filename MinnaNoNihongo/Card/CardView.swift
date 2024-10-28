@@ -87,6 +87,7 @@ struct CardView: View {
             case .NEXT:
                 opacityAnimation = 1
                 offsetAnimation = 0
+                angle = 0
                 
                 DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
                     disappeared()
