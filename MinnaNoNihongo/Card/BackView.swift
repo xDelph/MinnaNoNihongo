@@ -12,6 +12,10 @@ struct BackView: View {
     
     @Binding var background: Color
     
+    
+    @AppStorage(.settingsUserShowRomajiLearning)
+    private var isShowRomajiLearningEnabled: Bool = false
+    
     var body: some View {
         ZStack {
             RoundedRectangle(cornerRadius: 25)
@@ -36,9 +40,15 @@ struct BackView: View {
                     .font(.largeTitle)
                     .foregroundStyle(.black)
                 
+                if (isShowRomajiLearningEnabled) {
+                    Text(card.romaji)
+                        .foregroundStyle(.secondary)
+                        .italic()
+                }
+                
                 Text(LocalizedStringKey(card.traduction))
                     .font(.body)
-                    .foregroundStyle(.secondary)
+                    .foregroundStyle(.black)
                 
                 if !card.sampleKanji.isEmpty {
                     Spacer()
@@ -81,9 +91,9 @@ struct BackView: View {
 }
 
 #Preview("Sample") {
-    @Previewable @State var background: Color = .white
+    @Previewable @State var background: Color = .black
     
-    return BackView(
+    BackView(
         card: CardDTO.sample,
         background: $background
     )
@@ -91,9 +101,9 @@ struct BackView: View {
 }
 
 #Preview("Sample2") {
-    @Previewable @State var background: Color = .white
+    @Previewable @State var background: Color = .black
     
-    return BackView(
+    BackView(
         card: CardDTO.sample2,
         background: $background
     )

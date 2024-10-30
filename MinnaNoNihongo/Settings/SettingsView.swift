@@ -5,12 +5,23 @@
 //  Created by Thomas Delalonde on 18/10/2024.
 //
 
+import SwiftData
 import SwiftUI
 
 struct SettingsView: View {
+    let modelContainer: ModelContainer
+    
     @State var isShowKanaEnabled: Bool = true
-    @State var isShowRomajiTestEnabled: Bool = true
-    @State var isShowFuriganasTestEnabled: Bool = true
+    
+    @AppStorage(.settingsUserShowFuriginasTesting)
+    private var isShowFuriganasTestEnabled: Bool = true
+    
+    @AppStorage(.settingsUserShowRomajiLearning)
+    private var isShowRomajiTestEnabled: Bool = true
+    
+    @State private var resetting: Bool = false
+    @State private var isResetAlertPresented: Bool = false
+    @State private var isPresentingConfirm: Bool = false
     
     var body: some View {
         NavigationStack {
@@ -25,14 +36,36 @@ struct SettingsView: View {
                 }
                 
                 Section(header: Text("Data").font(.headline)) {
-                    Button("Reset learned cards") {}
+                    Button("Reset learned cards") {
+                        isPresentingConfirm.toggle()
+                    }
                 }
             }
             .navigationTitle(Text("Settings"))
         }
+        .allowsHitTesting(!resetting || !isPresentingConfirm)
+        .confirmationDialog("Are you sure?",
+          isPresented: $isPresentingConfirm) {
+          Button("Reset learned cards ?", role: .destructive) {
+              Task {    
+                  self.resetting.toggle()
+                  try? await ThreadsafeBackgroundCardActor(modelContainer: modelContainer).resetValues()
+                  self.isResetAlertPresented.toggle()
+              }
+          }
+        } message: {
+          Text("You cannot undo this action")
+        }
+        .alert(isPresented: $isResetAlertPresented) {
+            Alert(title: Text("Reset complete"),
+                  dismissButton: .default(Text("OK")) {
+                        self.resetting.toggle()
+                    }
+                  )
+            }
     }
 }
 
 #Preview {
-    SettingsView()
+    SettingsView(modelContainer: previewContainer)
 }

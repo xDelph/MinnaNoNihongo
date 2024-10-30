@@ -13,82 +13,72 @@ struct HomeView: View {
     
     let modelContainer: ModelContainer
     
-    @State private var resetting: Bool = false
-    @State private var isResetAlertPresented: Bool = false
+    @State private var showSettings: Bool = false
 
     var body: some View {
-        Spacer() 
-        Spacer()
-        
-        Text("Minna no nihongo")
-            .font(.system(size: 40))
-            .bold()
-        Text("flashcards")
-            .font(.title2)
-            .italic()
-        
-        Spacer()
-        
-        Button() {
-            router.navigate(to: .train)
-        } label: {
-            HStack {
-                Spacer()
-                Text("Training")
-                .foregroundColor(.white)
-                Spacer()
+        VStack {
+            Spacer()
+            Spacer()
+            
+            Text("Minna no nihongo")
+                .font(.system(size: 40))
+                .bold()
+            Text("flashcards")
+                .font(.title2)
+                .italic()
+            
+            Spacer()
+            
+            Button() {
+                router.navigate(to: .train)
+            } label: {
+                HStack {
+                    Spacer()
+                    Text("Training")
+                        .foregroundColor(.white)
+                    Spacer()
+                }
+                .contentShape(Rectangle())
             }
-            .contentShape(Rectangle())
+            .frame(maxWidth: 200)
+            .padding()
+            .background(.blue)
+            .cornerRadius(10)
+            
+            Button {
+                router.navigate(to: .test)
+            } label: {
+                HStack {
+                    Spacer()
+                    Text("Test yourself")
+                        .foregroundColor(.white)
+                    Spacer()
+                }
+                .contentShape(Rectangle())
+            }
+            .frame(maxWidth: 200)
+            .padding()
+            .background(.red)
+            .cornerRadius(10)
+            .shadow(color: .red, radius: 15, y: 5)
+            
+            Spacer()
+            Spacer()
+            
+            Button {
+                showSettings.toggle()
+            } label: {
+                Text("settings")
+                    .foregroundColor(.white)
+                    .font(.subheadline)
+            }
+            .frame(maxWidth: 100, maxHeight: 10)
+            .padding(10)
+            .background(.gray)
+            .cornerRadius(10)
+        }.sheet(isPresented: $showSettings) {
+            SettingsView(modelContainer: modelContainer)
         }
-        .frame(maxWidth: 200)
-        .padding()
-        .background(.blue)
-        .cornerRadius(10)
-        .allowsHitTesting(!resetting)
-        
-        Button {
-            router.navigate(to: .test)
-        } label: {
-            HStack {
-                Spacer()
-                Text("Test yourself")
-                  .foregroundColor(.white)
-                Spacer()
-            }
-            .contentShape(Rectangle())
-        }
-        .frame(maxWidth: 200)
-        .padding()
-        .background(.red)
-        .cornerRadius(10)
-        .shadow(color: .red, radius: 15, y: 5)
-        .allowsHitTesting(!resetting)
-        
-        Spacer()
-        Spacer()
-        
-        Button {
-            Task {
-                self.resetting.toggle()
-                try? await ThreadsafeBackgroundCardActor(modelContainer: modelContainer).resetValues()
-                self.isResetAlertPresented.toggle()
-            }
-        } label: {
-            Text("reset data")
-              .foregroundColor(.white)
-              .font(.subheadline)
-        }
-        .frame(maxWidth: 100, maxHeight: 10)
-        .padding(10)
-        .background(.gray)
-        .cornerRadius(10)
-        .alert(isPresented: $isResetAlertPresented) {
-            Alert(title: Text("Reset complete"),
-                  dismissButton: .default(Text("OK")) {
-                        self.resetting.toggle()
-                    }
-                  )
-            }
     }
 }
 
