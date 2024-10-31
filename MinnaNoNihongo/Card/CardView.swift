@@ -15,10 +15,11 @@ enum SwipeDirection {
 }
 
 struct CardView: View {
-    var card: CardDTO
-    var isTraining: Bool
+    private var card: CardDTO
+    private var isTraining: Bool
     
-    var disappeared: () -> ()?
+    
+    private var disappeared: (_ result: CardResult) -> Void
     
     @Binding var cardStatus: CardStatus
     
@@ -26,7 +27,7 @@ struct CardView: View {
         card: CardDTO,
         isTraining: Bool,
         cardStatus: Binding<CardStatus>,
-        disappeared: @escaping () -> () = {}
+        disappeared: @escaping (_ result: CardResult) -> () = {_ in }
     ) {
         self.card = card
         self.isTraining = isTraining
@@ -38,7 +39,8 @@ struct CardView: View {
     @State private var opacityAnimation: Double = 1.0
     @State private var offsetAnimation: CGFloat = 0
     @State private var backgroundAnimation: Color = .black
-    @State var swipeDirection: SwipeDirection = .none
+    @State private var swipeDirection: SwipeDirection = .none
+    @State private var answer: CardResult = .train
     
     var body: some View {
         VStack {
@@ -65,10 +67,13 @@ struct CardView: View {
             switch(newSwipeDirection) {
             case .left:
                 backgroundAnimation = .red
+                answer = .wrong
             case .right:
                 backgroundAnimation = .green
+                answer = .correct
             case .none:
                 backgroundAnimation = .black
+                answer = .train
             case .finished:
                 cardStatus = .DISAPPEAR
                 backgroundAnimation = .black
@@ -91,7 +96,8 @@ struct CardView: View {
                 angle = 0
                 
                 DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
-                    disappeared()
+                    disappeared(answer)
+                    answer = .train
                 }
             case .FRONT:
                 return

@@ -52,6 +52,7 @@ actor ThreadsafeBackgroundCardActor: Sendable {
         if let card = cards.first {
             card.value += value
         }
+        try context.save()
     }
     
     func resetValues() async throws {
@@ -61,6 +62,7 @@ actor ThreadsafeBackgroundCardActor: Sendable {
         for card in cards {
             card.value = 0
         }
+        try context.save()
     }
 }
 

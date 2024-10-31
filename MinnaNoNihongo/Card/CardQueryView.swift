@@ -8,6 +8,10 @@
 import SwiftData
 import SwiftUI
 
+enum CardResult {
+    case wrong, correct, train;
+}
+
 struct CardQueryView: View {
     private let modelContainer: ModelContainer
     private let cardViewModel: CardQueryViewModel
@@ -39,8 +43,17 @@ struct CardQueryView: View {
                             card: unwrappedCard,
                             isTraining: isTraining,
                             cardStatus: $cardStatus,
-                            disappeared: {
+                            disappeared: { result in
                                 Task {
+                                    switch(result) {
+                                    case .wrong:
+                                        try? await cardViewModel.backgroundUpdateValue(card, value: -1)
+                                    case .correct:
+                                        try? await cardViewModel.backgroundUpdateValue(card, value: +1)
+                                    case .train:
+                                        return
+                                    }
+                                    
                                     card = try? await chapterViewModel.backgroundFetchOneCard(
                                         for: selectedChapter,
                                         previousCard: card!
@@ -52,28 +65,9 @@ struct CardQueryView: View {
                         
                         if isTraining && cardStatus != .DISAPPEAR && cardStatus != .NEXT {
                             HStack {
-//                                if !isTraining {
-//                                    Button() {
-//                                        Task {
-//                                            cardStatus = .DISAPPEAR
-//                                            try? await cardViewModel.backgroundUpdateValue(card, value: -1)
-//                                        }
-//                                    } label: {
-//                                        Image(systemName: "xmark.circle")
-//                                            .resizable()
-//                                            .frame(width: 50, height: 50)
-//                                            .foregroundStyle(.red)
-//                                    }
-//                                    
-//                                    Spacer()
-//                                }
-                                
                                 Button() {
                                     Task {
                                         cardStatus = .DISAPPEAR
-                                        if !isTraining {
-                                            try? await cardViewModel.backgroundUpdateValue(card, value: +1)
-                                        }
                                     }
                                 } label: {
                                     Image(systemName: "checkmark.circle")
